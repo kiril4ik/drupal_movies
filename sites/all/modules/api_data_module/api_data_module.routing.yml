@@ -1,0 +1,7 @@
+hello.content:
+  path: '/getallposts'
+  defaults:
+    _controller: '\Drupal\api_data_module\Controller\APIController::aggregate'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'

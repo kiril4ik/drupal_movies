@@ -1,0 +1,21 @@
+uuid: 31fec4e7-3b11-4567-a84e-45461bcaa2bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_birthday
+    - node.type.actors
+  module:
+    - datetime
+id: node.actors.field_birthday
+field_name: field_birthday
+entity_type: node
+bundle: actors
+label: Birthday
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

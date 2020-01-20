@@ -1,0 +1,22 @@
+uuid: 92a87338-1aa3-4fc2-a4d0-12479c216a75
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - movies_lib
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: movies_lib_help
+theme: movies_lib
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

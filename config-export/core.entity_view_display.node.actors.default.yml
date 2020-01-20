@@ -1,0 +1,64 @@
+uuid: d52f4426-74b9-4aef-b912-310c7bd68bb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.actors.body
+    - field.field.node.actors.field_biography
+    - field.field.node.actors.field_birthday
+    - field.field.node.actors.field_movies
+    - field.field.node.actors.field_name
+    - node.type.actors
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.actors.default
+targetEntityType: node
+bundle: actors
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_biography:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_birthday:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_movies:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_name:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

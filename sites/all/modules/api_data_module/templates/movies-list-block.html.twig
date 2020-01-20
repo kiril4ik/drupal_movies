@@ -1,0 +1,16 @@
+<ul class="movies-list">
+  {% if items %}
+    {% for item in items %}
+      <li>
+        {% if item.Title %}
+          <h1>{{ item.Title }}</h1>
+        {% endif %}
+        <a href="https://www.imdb.com/title/{{ item.imdbID }}/"
+           title="{{ item.Title }}">https://www.imdb.com/title/{{ item.imdbID }}/</a><br>
+        {% if item.Poster %}
+          <img class="media-object img-responsive" style="max-height: 100px;" src="{{ item.Poster }}" alt="{{ item.Title }}">
+        {% endif %}
+      </li>
+    {% endfor %}
+  {% endif %}
+</ul>

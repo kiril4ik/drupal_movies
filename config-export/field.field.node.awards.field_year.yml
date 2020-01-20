@@ -1,0 +1,23 @@
+uuid: 6590a183-cfa7-47fc-be99-c90c767e1851
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.awards
+id: node.awards.field_year
+field_name: field_year
+entity_type: node
+bundle: awards
+label: Year
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1900
+  max: 2100
+  prefix: ''
+  suffix: ''
+field_type: integer

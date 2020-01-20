@@ -1,0 +1,30 @@
+<?php
+/**
+ * @file
+ *
+ * Place your custom PHP code in this file.
+ */
+use Drupal\Core\Url;
+use Drupal\Core\Link;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\file\Entity\File;
+use Drupal\image\Entity\ImageStyle;
+
+function movies_lib_preprocess_node(&$variables) {
+  $aa = $variables;
+}
+
+function movies_lib_page_alter(&$page) {
+//  if ( drupal_is_front_page() ) {
+    $aa= $page;
+//  }
+}
+
+function movies_lib_preprocess_block__system_branding_block(&$variables) {
+  $aa = $variables;
+}
+
+function movies_lib_preprocess_views_view_field(&$variables) {
+  $aa = $variables;
+}
+

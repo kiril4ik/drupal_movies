@@ -1,0 +1,36 @@
+uuid: a24d67f0-6885-47d8-98ae-d58659c62a66
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.awards.body
+    - field.field.node.awards.field_name
+    - field.field.node.awards.field_type
+    - field.field.node.awards.field_year
+    - node.type.awards
+  module:
+    - text
+    - user
+id: node.awards.teaser
+targetEntityType: node
+bundle: awards
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_name: true
+  field_type: true
+  field_year: true

@@ -1,0 +1,20 @@
+uuid: 5f735704-5d85-4de0-ba21-93f86b26be20
+langcode: en
+status: true
+dependencies:
+  theme:
+    - movies_lib
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: movies_lib_local_actions
+theme: movies_lib
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

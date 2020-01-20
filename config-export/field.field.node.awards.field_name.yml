@@ -1,0 +1,21 @@
+uuid: f121afd4-788d-4104-914b-a80871f64211
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.awards
+  module:
+    - options
+id: node.awards.field_name
+field_name: field_name
+entity_type: node
+bundle: awards
+label: Name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

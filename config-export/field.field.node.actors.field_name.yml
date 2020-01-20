@@ -1,0 +1,21 @@
+uuid: 925a461e-aa42-492b-a1a7-f3bbebbaeab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.actors
+  module:
+    - options
+id: node.actors.field_name
+field_name: field_name
+entity_type: node
+bundle: actors
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

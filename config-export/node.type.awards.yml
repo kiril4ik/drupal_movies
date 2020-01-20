@@ -1,0 +1,18 @@
+uuid: 1a3b1d1a-c619-410c-a37d-ba5443ac1fc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Awards
+type: awards
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

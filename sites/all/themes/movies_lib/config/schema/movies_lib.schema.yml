@@ -1,0 +1,5 @@
+# Schema for the configuration files of the MoviesLib theme.
+
+bartik.settings:
+  type: theme_settings
+  label: 'MoviesLib settings'

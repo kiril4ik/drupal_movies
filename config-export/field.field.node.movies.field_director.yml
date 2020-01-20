@@ -1,0 +1,21 @@
+uuid: f218f968-8f34-4a9f-8ed3-c7ac10628d51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_director
+    - node.type.movies
+  module:
+    - options
+id: node.movies.field_director
+field_name: field_director
+entity_type: node
+bundle: movies
+label: Director
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

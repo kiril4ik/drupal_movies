@@ -1,0 +1,22 @@
+uuid: 29c0832f-c061-482e-b48b-5c6c39f7d4a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movies_lib
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: movies_lib_content
+theme: movies_lib
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

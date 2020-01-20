@@ -1,0 +1,20 @@
+uuid: 71ea1b4d-4220-43dc-90b5-6c52b282240b
+langcode: en
+status: true
+dependencies:
+  module:
+    - api_data_module
+  theme:
+    - movies_lib
+id: apicontentblock
+theme: movies_lib
+region: sidebar_first
+weight: -5
+provider: null
+plugin: api_content_block
+settings:
+  id: api_content_block
+  label: 'Api Content Block'
+  provider: api_data_module
+  label_display: visible
+visibility: {  }

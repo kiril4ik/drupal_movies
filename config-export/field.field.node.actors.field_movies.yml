@@ -1,0 +1,21 @@
+uuid: aee5e09d-0ba1-410d-b26c-17b0fd7f22a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movies
+    - node.type.actors
+  module:
+    - options
+id: node.actors.field_movies
+field_name: field_movies
+entity_type: node
+bundle: actors
+label: Movies
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

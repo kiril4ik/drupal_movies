@@ -1,4 +1,4 @@
-uuid: 71ea1b4d-4220-43dc-90b5-6c52b282240b
+uuid: edc65b10-5f02-4d54-a9e7-18d3d344b646
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: apicontentblock
 theme: movies_lib
 region: sidebar_first
-weight: -5
+weight: 0
 provider: null
 plugin: api_content_block
 settings:

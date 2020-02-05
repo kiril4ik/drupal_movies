@@ -1,4 +1,4 @@
-uuid: f218f968-8f34-4a9f-8ed3-c7ac10628d51
+uuid: 82a9b6ba-56c7-482c-81db-9ebeedd62b0c
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_director
     - node.type.movies
   module:
-    - options
+    - text
 id: node.movies.field_director
 field_name: field_director
 entity_type: node
@@ -18,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: text

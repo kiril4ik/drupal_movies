@@ -1,4 +1,4 @@
-uuid: aee5e09d-0ba1-410d-b26c-17b0fd7f22a0
+uuid: 3cb9d281-d600-4ce9-b894-bb0fd4c7f32e
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_movies
     - node.type.actors
   module:
-    - options
+    - text
 id: node.actors.field_movies
 field_name: field_movies
 entity_type: node
@@ -18,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: text

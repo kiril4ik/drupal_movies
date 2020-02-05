@@ -1,4 +1,4 @@
-uuid: 925a461e-aa42-492b-a1a7-f3bbebbaeab7
+uuid: 45e511f1-17dc-4d16-a53d-3db12cd48962
 langcode: en
 status: true
 dependencies:
@@ -6,16 +6,16 @@ dependencies:
     - field.storage.node.field_name
     - node.type.actors
   module:
-    - options
+    - text
 id: node.actors.field_name
 field_name: field_name
 entity_type: node
 bundle: actors
 label: Name
 description: ''
-required: true
-translatable: false
+required: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: text

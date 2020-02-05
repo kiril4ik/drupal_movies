@@ -1,18 +1,17 @@
-uuid: b03bd898-ba96-4e9b-aaf0-889e4f2bb624
+uuid: 0378d934-8794-4977-b47c-6897da1dbdfb
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - text
 id: node.field_movies
 field_name: field_movies
 entity_type: node
-type: list_string
+type: text
 settings:
-  allowed_values: {  }
-  allowed_values_function: ''
-module: options
+  max_length: 255
+module: text
 locked: false
 cardinality: -1
 translatable: true

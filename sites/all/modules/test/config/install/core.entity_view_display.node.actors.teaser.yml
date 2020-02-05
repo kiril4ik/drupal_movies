@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actors.field_biography
+    - field.field.node.actors.field_birthday
+    - field.field.node.actors.field_movies
+    - field.field.node.actors.field_name
+    - node.type.actors
+  module:
+    - user
+id: node.actors.teaser
+targetEntityType: node
+bundle: actors
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_biography: true
+  field_birthday: true
+  field_movies: true
+  field_name: true

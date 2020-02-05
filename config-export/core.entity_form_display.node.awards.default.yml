@@ -33,16 +33,20 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_name:
-    weight: 122
-    settings: {  }
+    weight: 125
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: text_textfield
     region: content
   field_type:
-    weight: 123
-    settings: {  }
+    weight: 126
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: text_textfield
     region: content
   field_year:
     weight: 124

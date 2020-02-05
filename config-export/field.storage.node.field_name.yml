@@ -1,18 +1,17 @@
-uuid: 8ae8ada0-236e-4891-8182-77802543f6e5
+uuid: 00922aa2-5f92-4621-be0b-baf4f359a0dd
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - text
 id: node.field_name
 field_name: field_name
 entity_type: node
-type: list_string
+type: text
 settings:
-  allowed_values: {  }
-  allowed_values_function: ''
-module: options
+  max_length: 255
+module: text
 locked: false
 cardinality: 1
 translatable: true

@@ -4,27 +4,53 @@
  *
  * Place your custom PHP code in this file.
  */
+
 use Drupal\Core\Url;
 use Drupal\Core\Link;
 use Drupal\taxonomy\Entity\Term;
 use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
 
-function movies_lib_preprocess_node(&$variables) {
+function movies_lib_preprocess_node(&$variables)
+{
   $aa = $variables;
 }
 
-function movies_lib_page_alter(&$page) {
+function movies_lib_page_alter(&$page)
+{
 //  if ( drupal_is_front_page() ) {
-    $aa= $page;
+  $aa = $page;
 //  }
 }
 
-function movies_lib_preprocess_block__system_branding_block(&$variables) {
-  $aa = $variables;
+function movies_lib_preprocess_block__system_branding_block(&$variables)
+{
+  $variables['time'] = date('l \t\h\e jS M');
 }
 
-function movies_lib_preprocess_views_view_field(&$variables) {
-  $aa = $variables;
+function hook_css_alter(&$css, \Drupal\Core\Asset\AttachedAssetsInterface $assets) {
+
+  $jq = 'https://code.jquery.com/jquery-3.4.1.min.js';
+//  if (!isset($css[$jq])) {
+    $css[$jq] = [
+      'data' => $jq,
+      'type' => 'external',
+      'every_page' => TRUE,
+      'media' => 'all',
+      'preprocess' => FALSE,
+      'group' => CSS_AGGREGATE_THEME,
+      'browsers' => array('IE' => TRUE, '!IE' => TRUE),
+      'weight' => -1
+    ];
+//  }
 }
 
+function movies_lib_preprocess_page(&$variables) {
+  $time = (new DateTime())->format("H");
+  if($variables['is_front'] && ( ($time >= 0 && $time <= 5) || ($time >= 16 && $time <= 24) ) ){
+    $variables['#attached']['library'][] = 'movies_lib/night-styling';
+  }
+}
+
+function movies_lib_cron() {
+}

@@ -1,4 +1,4 @@
-uuid: f121afd4-788d-4104-914b-a80871f64211
+uuid: 6347d4d6-9b0e-4b92-9955-773791dd1fe2
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_name
     - node.type.awards
   module:
-    - options
+    - text
 id: node.awards.field_name
 field_name: field_name
 entity_type: node
@@ -14,8 +14,8 @@ bundle: awards
 label: Name
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: text

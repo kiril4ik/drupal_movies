@@ -1,16 +1,15 @@
-uuid: 56e706ae-eec1-46e5-a1f5-ff9d66b239c1
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.actors
+    - node.type.awards
   module:
     - text
-id: node.actors.body
+id: node.awards.body
 field_name: body
 entity_type: node
-bundle: actors
+bundle: awards
 label: Body
 description: ''
 required: false

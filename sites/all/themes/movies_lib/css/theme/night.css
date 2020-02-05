@@ -1,0 +1,5 @@
+#header {
+  background-color: grey !important;
+  background-image: -webkit-linear-gradient(top,grey 0%,grey 100%) !important;
+  background-image: linear-gradient(to bottom,grey 0%,grey 100%) !important;
+}

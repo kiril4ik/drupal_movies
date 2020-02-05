@@ -4,12 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.movies.body
+    - field.field.node.movies.field_actors
+    - field.field.node.movies.field_category
     - field.field.node.movies.field_director
     - field.field.node.movies.field_duration
+    - field.field.node.movies.field_pict
     - field.field.node.movies.field_year
     - node.type.movies
   module:
-    - options
+    - image
     - text
     - user
 id: node.movies.default
@@ -24,12 +27,27 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_director:
-    weight: 103
+  field_actors:
+    weight: 107
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    type: text_default
+    region: content
+  field_category:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_director:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_duration:
     weight: 104
@@ -39,6 +57,15 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
+    region: content
+  field_pict:
+    weight: 108
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_year:
     weight: 105

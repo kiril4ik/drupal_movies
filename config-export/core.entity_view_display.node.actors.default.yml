@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.actors.body
     - field.field.node.actors.field_biography
     - field.field.node.actors.field_birthday
     - field.field.node.actors.field_movies
@@ -11,7 +10,6 @@ dependencies:
     - node.type.actors
   module:
     - datetime
-    - options
     - text
     - user
 id: node.actors.default
@@ -19,13 +17,6 @@ targetEntityType: node
 bundle: actors
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_biography:
     weight: 103
     label: above
@@ -47,14 +38,14 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    type: text_default
     region: content
   field_name:
-    weight: 102
+    weight: 106
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    type: text_default
     region: content
   links:
     weight: 100

@@ -6,3 +6,9 @@ global-styling:
      css/components/node.css: {}
   js:
     js/script.js: {}
+
+night-styling:
+  version: VERSION
+  css:
+    theme:
+      css/theme/night.css: {}

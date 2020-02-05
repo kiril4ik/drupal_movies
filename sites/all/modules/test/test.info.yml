@@ -1,0 +1,17 @@
+name: Test
+description: 'content types'
+type: module
+core: 8.x
+dependencies:
+  - comment
+  - datetime
+  - field
+  - image
+  - menu_ui
+  - node
+  - path
+  - rdf
+  - taxonomy
+  - text
+  - user
+  - views
